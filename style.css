@@ -21,6 +21,7 @@ html {
     url("./images/bg-pattern-bottom-desktop.svg");
   background-position: top left, bottom right;
   background-repeat: no-repeat;
+  background-color: var(--white);
 }
 
 .banner {
