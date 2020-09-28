@@ -11,7 +11,7 @@ html {
   border: 2px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 400px 400px;
   margin: 5%;
 }
 
@@ -43,36 +43,47 @@ html {
   grid-template-columns: repeat(12, 1fr);
   row-gap: 15px;
   text-align: center;
-  /* padding: 20px; */
+  padding: 40px;
 }
 
 .rating-1 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   grid-column-start: 2;
   grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--lightgraymagenta);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--darkmagenta);
 }
 
 .rating-2 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   grid-column-start: 3;
   grid-column-end: 11;
   grid-row-start: 2;
   grid-row-end: 3;
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--lightgraymagenta);
+  border-radius: 10px;
+  color: var(--darkmagenta);
 }
 
 .rating-3 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   grid-column-start: 4;
   grid-column-end: 12;
   grid-row-start: 3;
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--lightgraymagenta);
+  border-radius: 10px;
+  color: var(--darkmagenta);
 }
 
 .review {
@@ -94,7 +105,7 @@ html {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 10;
   /* border: 2px solid black; */
   background: var(--darkmagenta);
   color: var(--white);
@@ -106,7 +117,7 @@ html {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 2;
-  grid-row-end: 6;
+  grid-row-end: 11;
   background: var(--darkmagenta);
   color: var(--white);
   border-radius: 10px;
@@ -117,7 +128,7 @@ html {
   grid-column-start: 9;
   grid-column-end: 13;
   grid-row-start: 3;
-  grid-row-end: 7;
+  grid-row-end: 12;
   background: var(--darkmagenta);
   color: var(--white);
   border-radius: 10px;
