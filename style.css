@@ -5,23 +5,32 @@ html {
   --graymagenta: hsl(303, 10%, 53%);
   --lightgraymagenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
+  background-color: var(--lightgraymagenta);
 }
 
 .container {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: 2px 2px 10px var(--graymagenta);
+  min-width: 375px;
+  max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 400px 400px;
   margin: 5%;
+  background-image: url("./images/bg-pattern-top-desktop.svg"),
+    url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
 }
 
 .banner {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  margin: 20px;
 }
 
 .tag-main {
   /* border: 1px solid gray; */
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--darkmagenta);
   width: 50%;
@@ -37,7 +46,7 @@ html {
 }
 
 .rating {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   display: grid;
   grid-template-rows: repeat(3, 80px);
   grid-template-columns: repeat(12, 1fr);
@@ -87,7 +96,7 @@ html {
 }
 
 .review {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   grid-column-start: 1;
   grid-column-end: 3;
   display: grid;
@@ -99,6 +108,10 @@ html {
 
 .reviewer-container {
   padding: 40px;
+  /* border: 1px solid silver; */
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
 }
 
 .review-1 {
@@ -145,8 +158,9 @@ html {
 
 .reviewer-details {
   display: block;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   align-content: space-between;
+  line-height: 1.5;
 }
 
 .reviewer img {
